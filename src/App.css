@@ -6,3 +6,56 @@
 body a {
   text-decoration: none;
 }
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: gray;
+  width: 100vw;
+  height: 100vh;
+
+}
+.wrapper{
+  height: 500px;
+  width: 500px;
+  background: white;
+  border: 1px soild gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.logoContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input{
+  width: 400px;
+  height: 50px;
+}
+
+@media screen and (max-width:600px) {
+  .wrapper {
+    width: 100vw;
+    height: 100vh;
+    
+  }
+  .input{
+   width: 300px;
+   height: 50px;
+  }
+}
+
+@media screen and (max-width : 350px) {
+  .wrapper {
+    width: 100vw;
+    height: 100vh;
+    
+  }
+  .input{
+   width: 200px;
+   height: 50px;
+  }
+}
