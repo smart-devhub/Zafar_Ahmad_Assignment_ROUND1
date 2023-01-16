@@ -16,7 +16,7 @@ function App() {
   }else{
     navigate('/')
   }
- },[email])
+ },[email,navigate])
  
   return (
     
