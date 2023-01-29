@@ -14,7 +14,7 @@ export const Notify=(x:string)=>{
       });
   }
   if(x==="error"){
-    return toast.error('Invalid Credentail', {
+    return toast.error('Either your password or login is incorrect', {
       position: "top-center",
       autoClose: 3000,
       hideProgressBar: false,

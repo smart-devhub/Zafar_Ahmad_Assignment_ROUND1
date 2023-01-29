@@ -14,15 +14,21 @@ function App() {
   if(email){
     navigate('/home')
   }else{
-    navigate('/')
+    navigate('/login')
   }
  },[email,navigate])
+
+ React.useEffect(()=>{
+  if(!localStorage.getItem("email")){
+     navigate('/login')
+  }
+ })
  
   return (
     
      
         <Routes>
-          <Route path='/' element={<Login />}/>
+          <Route path='/login' element={<Login />}/>
           <Route path='/home' element={<Home/>}/>
         </Routes>
       
